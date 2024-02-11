@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cell {
+    width: 25%;
+
+}
