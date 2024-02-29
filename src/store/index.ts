@@ -1,12 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import loginReducer from "./login/loginSlice";
-import homeReducer from "./home/homeSlice";
+import moviesReducers from "./movie/moviesSlice";
 import { useDispatch } from "react-redux";
 
 export const store = configureStore({
     reducer: {
-        login: loginReducer,
-        home: homeReducer,
+        movies: moviesReducers,
     },
 });
 export type rootState = ReturnType<typeof store.getState>;

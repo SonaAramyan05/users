@@ -1,64 +1,90 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "firstName": "Sonaddddd",
-      "lastName": "Aramyan",
-      "age": "90"
-    },
-    {
-      "id": "2",
-      "firstName": "name2",
-      "lastName": "ln2",
-      "age": 24
-    },
-    {
-      "id": "36bb",
-      "firstName": "neew",
-      "lastName": "new2",
-      "age": "35"
-    },
-    {
-      "id": "4a19",
-      "firstName": "again new",
-      "lastName": "ggadfo",
-      "age": "23"
-    },
-    {
-      "id": "fc17",
-      "firstName": "ddd",
-      "lastName": "ddd",
-      "age": "23"
-    },
-    {
-      "id": "f873",
-      "firstName": "sona",
-      "lastName": "dddd",
-      "age": "23"
-    },
-    {
-      "id": "ab67",
-      "firstName": "Sona",
-      "lastName": "someoneedited",
-      "age": "28"
-    },
-    {
-      "id": "8014",
-      "firstName": "dd",
-      "lastName": "ww",
-      "age": "22"
-    }
-  ],
-  "admins": [
-    {
-      "id": "1",
-      "username": "admin1",
-      "password": "password1"
-    },
-    {
-      "id": "2",
-      "username": "admin2",
-      "password": "password2"
-    }
-  ]
+    "users": [
+        {
+            "id": "1",
+            "firstName": "Sonaddddd",
+            "lastName": "Aramyan",
+            "age": "90"
+        },
+        {
+            "id": "2",
+            "firstName": "name2",
+            "lastName": "ln2",
+            "age": 24
+        },
+        {
+            "id": "36bb",
+            "firstName": "neew",
+            "lastName": "new2",
+            "age": "35"
+        },
+        {
+            "id": "4a19",
+            "firstName": "again new",
+            "lastName": "ggadfo",
+            "age": "23"
+        },
+        {
+            "id": "fc17",
+            "firstName": "ddd",
+            "lastName": "ddd",
+            "age": "23"
+        },
+        {
+            "id": "f873",
+            "firstName": "sona",
+            "lastName": "dddd",
+            "age": "23"
+        },
+        {
+            "id": "ab67",
+            "firstName": "Sona",
+            "lastName": "someoneedited",
+            "age": "28"
+        },
+        {
+            "id": "8014",
+            "firstName": "dd",
+            "lastName": "ww",
+            "age": "22"
+        }
+    ],
+    "admins": [
+        {
+            "id": "1",
+            "username": "admin1",
+            "password": "password1"
+        },
+        {
+            "id": "2",
+            "username": "admin2",
+            "password": "password2"
+        }
+    ],
+    "movies": [
+        {
+            "id": "",
+            "title": "incredible",
+            "description": "more incredible",
+            "year": "2025",
+            "country": "Armenia",
+            "rating": "10",
+            "genres": ["drama", " abc"],
+            "actors": ["actor a", " actor b", " actor c"],
+            "imageUrl": "https://www.kasandbox.org/programming-images/avatars/primosaur-sapling.png",
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg"
+        },
+        {
+            "id": "",
+            "title": "sdf",
+            "description": "asd",
+            "year": 0,
+            "country": "Armenia",
+            "rating": 0,
+            "genres": ["ddd"],
+            "actors": ["dafs"],
+            "imageUrl": "https://www.kasandbox.org/programming-images/avatars/purple-pi.png",
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        }
+    ]
 }
