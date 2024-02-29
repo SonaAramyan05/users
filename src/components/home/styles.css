@@ -19,3 +19,11 @@
     width: 25%;
 
 }
+
+.chatButton {
+    background-color: red;
+    width: 25%;
+    color: white;
+    font-size: large;
+    margin-top: 60px;
+}

@@ -5,14 +5,20 @@ import { usersSelector } from "../../store/home/homeSelector";
 import { AppDispatch, useAppDispatch } from "../../store";
 import NewUserModal from "../newUserModal";
 import "./styles.css";
-import { User } from "../../constants";
+import { User } from "../../types";
+import { useNavigate } from "react-router-dom";
+import CustomVideo from "../CustomVideo";
 
 const Home = () => {
     const dispatch: AppDispatch = useAppDispatch();
+    const navigate = useNavigate();
     const users = useSelector(usersSelector) || null;
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedUser, setSelectedUser] = useState<User | null>(null);
+    const handleChatButtonClick = () => {
+        navigate("/chat");
+    };
 
     const openModal = (user: User | null) => {
         setSelectedUser(user);
@@ -27,7 +33,6 @@ const Home = () => {
     };
 
     const handleDeleteUser = (userId: number) => {
-        // Delete user
         dispatch(deleteUser(userId));
         dispatch(getUsers());
     };
@@ -70,6 +75,10 @@ const Home = () => {
             {isModalOpen && (
                 <NewUserModal user={selectedUser} onCancel={closeModal} />
             )}
+            <button className="chatButton" onClick={handleChatButtonClick}>
+                Go to chat
+            </button>
+            <CustomVideo></CustomVideo>
         </div>
     );
 };
