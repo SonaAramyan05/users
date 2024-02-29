@@ -60,7 +60,9 @@ const Movies: React.FC = () => {
                     onSortOrderChange={handleSortOrderChange}
                 />
             )}
-            <button onClick={handleSortButtonClick}>Sort</button>
+            {!isSortButtonClicked && (
+                <button onClick={handleSortButtonClick}>Sort</button>
+            )}
 
             <h2>Movies</h2>
             <div>

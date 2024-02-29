@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 import { MovieDTO } from "../../types";
 
 const Admin: React.FC = () => {
@@ -32,7 +33,9 @@ const Admin: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:8000/movies", formData);
+            const id = uuidv4();
+            const movieDataWithId = { ...formData, id };
+            await axios.post("http://localhost:8000/movies", movieDataWithId);
             setFormData({
                 id: "",
                 title: "",
